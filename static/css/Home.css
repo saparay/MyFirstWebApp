@@ -1,0 +1,52 @@
+thead{
+
+}
+tr td{
+border:1px solid black;
+posion:relative;
+
+
+}
+td{
+border:1px solid black;
+
+}
+table{
+border:1px solid black;
+border-radius:4px;
+margin-left:auto;
+margin-right:auto;
+background: rgb(63,94,251);
+background: linear-gradient(274deg,
+ rgba(63,94,251,1) 0%, rgba(141,67,252,1) 51%, rgba(70,239,252,1) 100%);
+
+}
+.table-container{
+margin: auto auto auto auto;
+
+background: rgb(63,94,251);
+background: linear-gradient(274deg, rgba(63,94,251,1) 0%, rgba(70,239,252,1) 100%);
+}
+a{
+text-decoration:none;
+}
+
+.form-container{
+    border: 1px solid black;
+    width:60px;
+    height:20px;
+    margin-right:auto;
+    text-align:center;
+    background-color:wheat;
+    border-radius:2px;
+    margin-left:800px;
+
+}
+.insert-container{
+float:left;
+width:50%
+}
+.Update-container{
+float:right;
+width:50%
+}

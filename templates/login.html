@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        .content-container{
+            width:50%;
+            float:left;
+            border-radius:8px;
+
+            font-size:80px;
+            margin-top:10%;
+        }
+        body{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg,
+        rgba(2,0,36,1) 0%, rgba(255,0,194,1) 100%);
+        }
+        .login-container{
+            width:30%;
+            margin-top:15%;
+
+            float:right;
+            margin-left:auto;
+            margin-right:auto;
+            height:300px;
+            text-align:center;
+            background: rgb(63,94,251);
+            background: linear-gradient(342deg,
+            rgba(63,94,251,1) 17%, rgba(235,252,67,1)
+            48%, rgba(144,245,169,1) 68%, rgba(120,243,195,1)
+            85%, rgba(70,239,252,1) 100%);
+            border-radius:8px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content-container">
+    <p>
+        This is a demo page for flask,<br>
+        Iam learning Flask
+    </p>
+    </div>
+    <div class="form-deco">
+        <div class="login-container">
+        <form method="POST" action="/login_validation">
+            <br><br><br>
+            <label>UserName</label><br>
+            <input type="text" name="username" placeholder="xxxxx@Xmail.com"><br><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="XXXXXXXXX"><br><br>
+            <input type="submit" value="Login"><br><br>
+            <p>Not a member? <a href="/register">Create Account</a></p>
+        </form>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

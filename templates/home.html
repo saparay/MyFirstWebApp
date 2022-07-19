@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link href="{{url_for('static', filename='css/Home.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+<h1>Perform your CRUD operations here</h1>
+
+    <div class="table-container">
+        <button><a href="/logout">logout</a></button><br><br>
+
+        <div class="form-container">
+
+           <a href="/add_data" class="btn" type="button">Insert</a>
+
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Enail</td>
+                <td>Password</td>
+                <td>Edit</td>
+                <td>Delete</td>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in logininfo %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ row.1 }}</td>
+                <td>{{ row.2 }}</td>
+                <td>{{ row.3 }}</td>
+                <td><button><a href="{{url_for('update', id=row.0)}}">Edit</a></button></td>
+                <td><button><a href="/delete/{{ row.0 }}"
+                               onclick="return confirm('Are You Sure For Deleting Data')">Delete</a></button></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>
